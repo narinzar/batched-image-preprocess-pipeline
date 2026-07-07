@@ -1,0 +1,14 @@
+# Core dependencies for the batched image preprocessing pipeline.
+#
+# torch: install from the CUDA 12.8 wheel index so it matches an RTX 5090 (sm_120):
+#   pip install torch --index-url https://download.pytorch.org/whl/cu128
+# The line below pins only the package name; use the cu128 index above to fetch
+# a GPU build. A CPU-only torch also works for everything except the actual
+# CUDA transfer path.
+numpy
+pillow
+torch
+tqdm
+matplotlib
+pytest
+python-dotenv
